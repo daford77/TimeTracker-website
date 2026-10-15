@@ -42665,7 +42665,7 @@ $S:3}
 A.bkC.prototype={
 $1(a){var s=A.eX().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/deb287481e3ce9468f3434937ced4240a70539ca/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/a804b261645ef8c13eb3d5c44a5c2fb0340c5539/":s)+a},
 $S:52}
 A.a2l.prototype={
 gv(a){var s=this.a
@@ -151853,7 +151853,7 @@ B.f3=new A.xF(0,"none")
 B.a1y=new A.xF(1,"low")
 B.jJ=new A.xF(2,"medium")
 B.ma=new A.xF(3,"high")
-B.a1z=new A.CO("REPLACE_ME_DEV","REPLACE_ME_DEV","REPLACE_ME_DEV","rental-time-tracker-dev","rental-time-tracker-dev.firebaseapp.com",null,"rental-time-tracker-dev.appspot.com",null,null,null,null,null,null,null)
+B.a1z=new A.CO("AIzaSyBqR8HkjzvWtEIvRH7LwP_RerUFW4QQ3aA","1:793329300885:android:39a80cef28595159e3f29c","793329300885","rental-time-tracker","rental-time-tracker.firebaseapp.com",null,"rental-time-tracker.firebasestorage.app",null,null,null,null,null,null,null)
 B.az=new A.F(0,0)
 B.a1A=new A.a0i(B.az,B.az)
 B.a1B=new A.CR(!0,A.bDf(),A.bXp())
