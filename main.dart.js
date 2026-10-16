@@ -42720,7 +42720,7 @@ $S:3}
 A.bkL.prototype={
 $1(a){var s=A.eX().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/deb287481e3ce9468f3434937ced4240a70539ca/":s)+a},
+return(s==null?"https://www.gstatic.com/flutter-canvaskit/a804b261645ef8c13eb3d5c44a5c2fb0340c5539/":s)+a},
 $S:52}
 A.a2p.prototype={
 gv(a){var s=this.a
@@ -145041,7 +145041,7 @@ Kg(a,b,c,d,e,f,g,h){return this.aLG(a,b,c,d,e,f,g,h)},
 aLG(a,b,c,d,e,f,g,a0){var s=0,r=A.m(t.H),q=1,p=[],o,n,m,l,k,j,i,h
 var $async$Kg=A.i(function(a1,a2){if(a1===1){p.push(a2)
 s=q}for(;;)switch(s){case 0:q=3
-o=A.lH("https://firestore.googleapis.com/v1/projects/rental-time-tracker/databases/(default)/documents/tenant_requests")
+o=A.lH("https://firestore.googleapis.com/v1/projects/rental-time-tracker/databases/(default)/documents/tenant_requests?key=AIzaSyBqR8HkjzvWtEIvRH7LwP_RerUFW4QQ3aA")
 k=t.N
 j=t.z
 n=B.ar.dH(A.ab(["fields",A.ab(["propertyId",A.ab(["integerValue",B.p.k(e)],k,j),"unitName",A.ab(["stringValue",a0],k,j),"tenantName",A.ab(["stringValue",f],k,j),"tenantPhone",A.ab(["stringValue",g],k,j),"category",A.ab(["stringValue",a],k,j),"description",A.ab(["stringValue",b],k,j),"permissionToEnter",A.ab(["booleanValue",d],k,j),"isEmergency",A.ab(["booleanValue",c],k,j),"status",A.ab(["stringValue","To Do"],k,j),"createdAt",A.ab(["integerValue",B.p.k(Date.now())],k,j)],k,j)],k,j),null)
