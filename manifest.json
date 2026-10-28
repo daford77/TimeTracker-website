@@ -1,13 +1,27 @@
 {
-    "name": "rental_time_tracker_flutter",
-    "short_name": "rental_time_tracker_flutter",
+    "name": "Rental Time Tracker & Tenant Portal",
+    "short_name": "Resident Portal",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Offline-ready Property Management & Resident Self-Service Portal with shut-off valve maps, smart maintenance triage, and digital walkthroughs.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Report Repair / Triage",
+            "short_name": "Report Issue",
+            "description": "Submit a maintenance request or run 30-second self-service troubleshooting",
+            "url": "./#/tenant"
+        },
+        {
+            "name": "Emergency Shut-Offs",
+            "short_name": "Emergency Info",
+            "description": "Offline water, gas, and breaker shut-off locations",
+            "url": "./#/tenant"
+        }
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",
