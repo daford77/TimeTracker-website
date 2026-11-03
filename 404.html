@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiseLandlord Property Management</title>
+  <script>
+    (async function () {
+      try {
+        if ('serviceWorker' in navigator) {
+          var regs = await navigator.serviceWorker.getRegistrations();
+          for (var i = 0; i < regs.length; i++) {
+            await regs[i].unregister();
+          }
+        }
+        if ('caches' in window) {
+          var keys = await caches.keys();
+          for (var j = 0; j < keys.length; j++) {
+            await caches.delete(keys[j]);
+          }
+        }
+      } catch (e) {}
+      var path = window.location.pathname || '/';
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+      if (path !== '/' && path !== '/index.html') {
+        var cleanPath = path.replace(/\/+$/, '');
+        window.location.replace('/#' + cleanPath + search + hash);
+      } else {
+        window.location.replace('/' + search + hash);
+      }
+    })();
+  </script>
+</head>
+<body style="background:#1565c0;color:#fff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+  <div>Redirecting to WiseLandlord Portal...</div>
+</body>
+</html>
