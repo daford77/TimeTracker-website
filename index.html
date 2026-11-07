@@ -120,15 +120,13 @@
       if ('caches' in window) {
         caches.keys().then(function(names) {
           for (let name of names) {
-            if (name.indexOf('flutter-app-') === 0) {
-              caches.delete(name);
-            }
+            caches.delete(name);
           }
         });
       }
     }
   </script>
-  <script src="flutter_bootstrap.js" async=""></script>
+  <script src="flutter_bootstrap.js?v=124" async=""></script>
 
 
 </body></html>
