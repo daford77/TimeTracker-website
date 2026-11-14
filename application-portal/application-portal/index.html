@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ready 4 Rent — Confidential Rental Application Portal</title>
+  <script>
+    (async function () {
+      try {
+        if ('serviceWorker' in navigator) {
+          var regs = await navigator.serviceWorker.getRegistrations();
+          for (var i = 0; i < regs.length; i++) {
+            await regs[i].unregister();
+          }
+        }
+        if ('caches' in window) {
+          var keys = await caches.keys();
+          for (var j = 0; j < keys.length; j++) {
+            await caches.delete(keys[j]);
+          }
+        }
+      } catch (e) {}
+      var search = window.location.search || '';
+      var sep = search ? (search + '&apply=1') : '?apply=1';
+      window.location.replace('/' + sep + '#/apply' + search);
+    })();
+  </script>
+</head>
+<body style="background:#1a237e;color:#fff;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+  <div>Opening Confidential Rental Application Portal...</div>
+</body>
+</html>
